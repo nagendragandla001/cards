@@ -1,0 +1,65 @@
+.cards-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+  & .add-card {
+    border: 1px dotted grey;
+    height: 8em;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    & .add-btn {
+      border-radius: 100px;
+      border: none;
+      height: 45px;
+      width: 45px;
+      background: #000;
+      color: #fff;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+    & .title {
+      color: rgb(95, 93, 93);
+    }
+  }
+
+  & .cards-carousel {
+    position: relative;
+    display: grid;
+    align-items: center;
+
+    & .left {
+      position: absolute;
+      left: 0;
+      cursor: pointer;
+    }
+
+    & .right {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+
+    & .card-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0 2em;
+      height: 14em;
+      max-width: 63vw;
+      overflow: hidden;
+      gap: 2em;
+      color: #fff;
+
+      & .card-outer-wrapper {
+        cursor: pointer;
+      }
+    }
+  }
+}

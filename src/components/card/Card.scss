@@ -1,0 +1,13 @@
+.card-container {
+  height: 9em;
+  width: 16em;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 1em;
+  color: #fff;
+}

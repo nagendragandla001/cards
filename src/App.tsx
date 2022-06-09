@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Cards from "./components/cards/Cards";
+
+export interface CardProps {
+  id?: any;
+  card_name?: string;
+  card_last_four?: string;
+  expiry?: string;
+  colour?: string;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <h3 className="title">Cards</h3>
+      <Cards />
+    </section>
   );
 }
 

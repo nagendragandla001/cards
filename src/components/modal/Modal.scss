@@ -1,0 +1,87 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: rgba(31, 32, 41, 0.75);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0ms 0ms ease;
+}
+.visible {
+  pointer-events: auto;
+  opacity: 1;
+  transition: all 0ms ease-in-out;
+}
+.modal-body-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+  width: 60vw;
+  height: auto;
+  min-height: 400px;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  align-self: center;
+  box-shadow: 0 12px 25px 0 rgba(199, 175, 189, 0.25);
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 0ms 0ms ease, transform 0ms 0ms ease;
+  transform: scale(0);
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+}
+.visible .modal-body-content {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 00ms 00ms ease, transform 0ms 0ms ease;
+}
+
+.close-btn {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.color-container {
+  display: flex;
+  gap: 1em;
+}
+
+.colour-btn {
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 1em 3em;
+  border-radius: 8px;
+  cursor: pointer;
+}
